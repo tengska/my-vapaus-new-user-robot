@@ -4,7 +4,7 @@ from robocorp import browser
 
 url = "https://user.staging-vapaus.com/" #URL is not yet dynamic
 language = "EN" #language is not yet dynamic
-email = "karla+vc8@vapaus.io" #email is not yet dynamic
+email = "karla+vc9@vapaus.io" #email is not yet dynamic
 pwd = email #password is the same as email for testing purposes
 
 
@@ -62,7 +62,7 @@ def submit_registration_form():
     page.wait_for_timeout(1000)  # Wait 1 second to ensure the page is fully rendered
 
     email_prefix = email.split("@")[0]
-    screenshot_path = f"output/screenshots/{email_prefix}_registration_confirmation.png"
+    screenshot_path = f"output/screenshots/registration_confirmations/{email_prefix}_registration_confirmation.png"
     page.screenshot(path=screenshot_path)
 
 # If email is not received, click send again button.sc-hknOHE.kCOwFU
